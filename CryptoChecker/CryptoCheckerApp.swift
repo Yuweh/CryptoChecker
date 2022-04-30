@@ -11,7 +11,7 @@ import SwiftUI
 struct CryptoCheckerApp: App {
     var body: some Scene {
         WindowGroup {
-            CoinListView()
+            CoinList()
         }
     }
 }

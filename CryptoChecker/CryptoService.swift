@@ -14,16 +14,17 @@ final class CryptoService {
         var components = URLComponents()
         components.scheme = "https"
         components.host  = "api.coinranking.com"
-        components.path  = "/v1/public/coins"
+        components.path  = "/v2/coins"
         components.queryItems = [URLQueryItem(name: "base", value: "USD"), URLQueryItem(name: "timePeriod", value: "24h")]
         return components
     }
     
     func fetchCoins() -> AnyPublisher<CryptoDataContainer, Error> {
         return URLSession.shared.dataTaskPublisher(for: components.url!)
-            .map { <#(data: Data, response: URLResponse)#> in
-                <#code#>
-            }
+            .map { $0.data }
+            .decode(type: CryptoDataContainer.self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
     }
     
 }
@@ -35,12 +36,12 @@ struct CryptoDataContainer: Decodable {
 }
 
 struct CyptoData: Decodable {
-    let coins: [Coin] 
-
+    let coins: [Coin]
+    
 }
 
-struct Coin: Decodable {
+struct Coin: Decodable, Hashable {
     let name: String
     let price: String
-
+    
 }

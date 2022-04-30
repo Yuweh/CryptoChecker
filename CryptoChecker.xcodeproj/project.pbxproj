@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		769E3619281CED9B001D323C /* CryptoCheckerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E3618281CED9B001D323C /* CryptoCheckerApp.swift */; };
-		769E361B281CED9B001D323C /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E361A281CED9B001D323C /* CoinListView.swift */; };
+		769E361B281CED9B001D323C /* CoinList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E361A281CED9B001D323C /* CoinList.swift */; };
 		769E361D281CED9C001D323C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769E361C281CED9C001D323C /* Assets.xcassets */; };
 		769E3620281CED9C001D323C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769E361F281CED9C001D323C /* Preview Assets.xcassets */; };
 		769E3627281CEF05001D323C /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E3626281CEF05001D323C /* CryptoService.swift */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		769E3615281CED9B001D323C /* CryptoChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		769E3618281CED9B001D323C /* CryptoCheckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCheckerApp.swift; sourceTree = "<group>"; };
-		769E361A281CED9B001D323C /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
+		769E361A281CED9B001D323C /* CoinList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinList.swift; sourceTree = "<group>"; };
 		769E361C281CED9C001D323C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		769E361F281CED9C001D323C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		769E3626281CEF05001D323C /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
@@ -54,10 +54,10 @@
 			isa = PBXGroup;
 			children = (
 				769E3618281CED9B001D323C /* CryptoCheckerApp.swift */,
-				769E361A281CED9B001D323C /* CoinListView.swift */,
+				769E3626281CEF05001D323C /* CryptoService.swift */,
+				769E361A281CED9B001D323C /* CoinList.swift */,
 				769E361C281CED9C001D323C /* Assets.xcassets */,
 				769E361E281CED9C001D323C /* Preview Content */,
-				769E3626281CEF05001D323C /* CryptoService.swift */,
 			);
 			path = CryptoChecker;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				769E361B281CED9B001D323C /* CoinListView.swift in Sources */,
+				769E361B281CED9B001D323C /* CoinList.swift in Sources */,
 				769E3627281CEF05001D323C /* CryptoService.swift in Sources */,
 				769E3619281CED9B001D323C /* CryptoCheckerApp.swift in Sources */,
 			);
